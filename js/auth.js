@@ -1,10 +1,10 @@
 // js/auth.js - النسخة المحدثة مع دعم الإيميل
 class AuthManager {
-    constructor() {
-        this.baseUrl = 'http://localhost/Recycling/api/';
-        this.currentUser = null;
-        this.init();
-    }
+constructor() {
+    this.baseUrl = 'https://recyclingm70e.free.nf/api/';
+    this.currentUser = null;
+    this.init();
+}
     
     init() {
         this.loadUser();
@@ -534,4 +534,5 @@ authStyles.textContent = `
     @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
     .btn-primary:disabled { opacity: 0.7; cursor: not-allowed; }
 `;
+
 document.head.appendChild(authStyles);
